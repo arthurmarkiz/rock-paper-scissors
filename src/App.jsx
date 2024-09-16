@@ -1,10 +1,11 @@
+import Navbar from "./components/Navbar"
 
 const App = () => {
 
   return (
     <>
-    <div className="bg-slate-800">
-      <h1 className="text-3xl font-bold text-emerald-500">Hello World!</h1>
+    <div className="bg-white py-6 px-10 rounded-lg w-[1024px] flex justify-center shadow-lg shadow-black/50">
+      <Navbar />
     </div>
     </>
   )
