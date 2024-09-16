@@ -4,7 +4,7 @@ import { FaSun } from "react-icons/fa";
 const Navbar = () => {
     return (
         <>
-            <div className="flex justify-between w-full border-b border-gray pb-6">
+            <nav className="flex justify-between w-full border-b border-gray pb-6">
                 <div className="flex space-x-2 items-center">
                     <div className="w-4 h-4 rounded-full bg-softRed"></div>
                     <div className="w-4 h-4 rounded-full bg-softYellow"></div>
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <button className="rounded-full bg-lightGray p-1 border-black border"><FaMoon /></button>
                     <button className="rounded-full bg-lightGray p-1 border-black border"><FaSun /></button>
                 </div>
-            </div>
+            </nav>
         </>
     )
 }
