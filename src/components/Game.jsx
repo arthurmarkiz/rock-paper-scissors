@@ -70,31 +70,33 @@ const Game = () => {
 
     return (
         <>
-        <div className={"flex space-x-36 justify-center items-center mt-6 mb-12 mr-5 " + fillBg}>
+        <div className={"flex space-x-36 justify-center items-center mt-6 mb-12 mr-5 " + 
+            "max-sm:space-x-16 max-sm:mb-12 max-sm:space-y-6 max-lg:mt-0 max-lg:space-x-28" + fillBg}>
             <button 
                 key='Rock'
                 className="hover:scale-105 duration-300"
                 onClick={()=>handleClick('Rock')}    
             >
-                <img className="h-36 mt-12" src={RockHand} />
+                <img className="h-36 mt-12 max-sm:h-16 max-sm:mt-16 max-lg:mt-8" src={RockHand} />
             </button>
             <button 
                 key='Paper'
                 className="hover:scale-105 duration-300"
                 onClick={()=>handleClick('Paper')} 
             >
-                <img className="h-56" src={PaperHand} />
+                <img className="h-56 max-sm:h-24 max-sm:mt-6" src={PaperHand} />
             </button>
             <button
                 key='Scissors'
                 className="hover:scale-105 duration-300"
                 onClick={()=>handleClick('Scissors')}    
             >
-                <img className="h-44 mt-6" src={ScissorsHand} />
+                <img className="h-44 mt-6 max-sm:h-20 max-sm:mt-10 max-lg:mt-4" src={ScissorsHand} />
             </button>
         </div>
         {gameStarted && <>
-            <div className="flex space-x-24 mb-8 justify-center text-black dark:text-white">
+            <div className="flex space-x-24 mb-8 justify-center text-black dark:text-white
+            max-lg:flex-col max-lg:items-center max-lg:space-x-0 max-lg:space-y-2">
                 <p>👼 Your Choice: <span className="font-bold ml-3">{userChoice}</span></p>
                 <p className="font-extrabold">VS</p>
                 <p>💻 PC Choice: <span className="font-bold ml-3">{pcChoice}</span></p>

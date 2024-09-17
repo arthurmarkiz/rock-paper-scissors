@@ -12,13 +12,15 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="flex justify-between items-center w-full border-b border-gray pb-6">
+            <nav className="flex justify-between items-center w-full border-b border-gray pb-6
+            max-lg:flex-col max-lg:space-y-8">
                 <div className="flex space-x-2 items-center">
                     <div className="w-4 h-4 rounded-full bg-softRed"></div>
                     <div className="w-4 h-4 rounded-full bg-softYellow"></div>
                     <div className="w-4 h-4 rounded-full bg-softGreen"></div>
                 </div>
-                <div className="flex space-x-14 items-center text-black dark:text-white">
+                <div className="flex space-x-14 items-center text-black dark:text-white
+                max-lg:hidden">
                     <p>Rock</p>
                     <p>Paper</p>
                     <p>Scissors</p>
@@ -40,8 +42,8 @@ const Navbar = () => {
                         }
                     }}>
                     <div className="flex flex-col p-10 justify-center items-center text-black dark:text-white">
-                        <h1 className="text-4xl font-extrabold mb-8">The Basic Rules of RPS</h1>
-                        <div className="flex flex-col">
+                        <h1 className="text-4xl font-extrabold mb-8 max-sm:text-3xl">The Basic Rules of RPS</h1>
+                        <div className="flex flex-col max-sm:items-center">
                             <label className="flex items-center space-x-3">
                                 <div className="w-3 h-3 rounded-full bg-softRed"></div>
                                 <p>Rock wins against scissors.</p>

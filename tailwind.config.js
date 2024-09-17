@@ -22,6 +22,13 @@ export default {
       lightPurple: '#6962C9',
       purple: '#473C88',
     },
+    screens: {
+      'ultra-sm': '400px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    }
   },
   plugins: [],
   darkMode: 'class',
