@@ -94,7 +94,7 @@ const Game = () => {
             </button>
         </div>
         {gameStarted && <>
-            <div className="flex space-x-24 mb-8 justify-center text-black">
+            <div className="flex space-x-24 mb-8 justify-center text-black dark:text-white">
                 <p>👼 Your Choice: <span className="font-bold ml-3">{userChoice}</span></p>
                 <p className="font-extrabold">VS</p>
                 <p>💻 PC Choice: <span className="font-bold ml-3">{pcChoice}</span></p>
